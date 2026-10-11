@@ -1,0 +1,41 @@
+# 凭据与敏感数据
+config.json
+*.db
+*.db-shm
+*.db-wal
+cookies.txt
+.env
+
+# 微信登录态
+state/
+**/state/
+
+# 媒体附件
+media/
+**/media/
+
+# 日志
+logs/
+**/logs/
+*.log
+
+# 进程文件
+*.pid
+
+# Profile 独立目录（运行时生成）
+.profiles/
+profiles/
+
+# Node
+node_modules/
+dist/
+
+# 备份
+*.bak
+*.backup
+/tmp/
+
+# Isolated tests and runtime backups
+.test-tmp-*/
+backups/
+*.backup-*

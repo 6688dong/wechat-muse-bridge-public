@@ -1,0 +1,23 @@
+[Unit]
+Description=WeChat Muse bridge
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=3
+
+[Service]
+Type=simple
+# Replace user, HOME, Node executable and paths before installation.
+User=YOUR_SERVICE_USER
+Environment=HOME=/home/YOUR_SERVICE_USER
+WorkingDirectory=/home/YOUR_SERVICE_USER/wechat-muse-bridge/bridge
+ExecStart=/usr/bin/node /home/YOUR_SERVICE_USER/wechat-muse-bridge/bridge/bridge.js
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+# Add proxy variables only for an environment that requires them.
+# Repeated startup failures stop after the Unit start limit; fix the cause,
+# then use systemctl reset-failed and start. Avoid unattended endless retries.
+
+[Install]
+WantedBy=multi-user.target

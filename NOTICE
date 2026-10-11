@@ -1,0 +1,12 @@
+Required Notice: Copyright (c) 2026 6688dong and project contributors.
+
+Project-owned code and documentation are licensed under the PolyForm
+Noncommercial License 1.0.0 in LICENSE. Commercial use of that material
+requires a separate grant from the relevant rights holders.
+
+Third-party material is excluded from the project license. In particular,
+bridge/vendor/weixin-agent-sdk/ remains under its accompanying MIT license,
+including the local modifications to that SDK. Its original copyright notice
+and full MIT permission notice must be preserved.
+
+See THIRD_PARTY_NOTICES.md for the license boundaries and dependency notices.

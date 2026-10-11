@@ -1,0 +1,1 @@
+{"history_call_timeout_ms":15000,"history_limit":50,"ilink_user_id":"<绑定微信用户的 ilink user id，形如 o9cq80...@im.wechat，首次扫码登录后从日志获取>","muse_cli_path":"<muse-cli 可执行文件绝对路径，例如 /path/to/muse-cli-venv/bin/muse-cli>","muse_poll_interval_ms":4000,"muse_timeout_ms":180000,"task_total_timeout_ms":480000,"weixin_session_id":"<muse-cli session-start 返回的 session_id，桥接独占>"}
